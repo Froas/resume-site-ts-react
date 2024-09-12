@@ -1,0 +1,122 @@
+{
+    "header": {
+      "welcome": "ようこそ",
+      "switchThemeDark": "暗いテーマに変更",
+      "switchThemeLight": "明るいテーマに変更",
+      "language": "言語"
+    },
+    "maincontent": {
+        "bio": {
+            "tag": "自己紹介",
+            "name": "ナルト",
+            "number": "0000-00000-00000",
+            "residency": "日本"
+        },
+        "summary": {
+            "tag": "概要",
+            "description": "様々なクライアントプロジェクトでの経験を持つフルスタック開発者です。ウェブベースの予約システムからAndroidアプリまで、多岐にわたる技術に携わってきましたが、特にバックエンド開発に情熱を持っています。特にAPI設計やサーバーデプロイに強い関心があり、現在はバックエンド開発に特化して、スケーラブルで効率的なシステムを構築し、複雑な課題に取り組みたいと考えています。"
+        },
+        "skills": {
+            "tag": "スキル",
+            "frontend": "フロントエンド: Typescript, React, HTML, CSS, Tailwind.",
+            "backend": "バックエンド: NodeJS, Python, Java, ExpressJS",
+            "deployment": "デプロイ: Linux, Docker.",
+            "language": "言語: 日本語、 英語、 ロシア語、キルギス語、ウズベク語"
+        },
+        "about me": {
+            "tag": "ABOUT ME",
+            "description": "suck my dick"
+        },
+        "experience": {
+            "tag": "EXPERIENCE",
+            "experiences": [{
+                "position": "ソフトウェアエンジニア インターンシップ",
+                "workplace": "U",
+                "location": "茨城県",
+                "period": "令和５年５月ー令和５年１２月",
+                "tasks": [{
+                    "task": "Contributed to code refactoring for enhanced maintainability and code quality."
+                },
+                {
+                    "task": "Assisted in website layout design, emphasizing responsive and user-friendly interfaces."
+                },
+                {
+                    "task": "Debugged and resolved issues, improving the overall system reliability."
+                }]
+            },
+            {
+                "position": "ソフトウェアエンジニア",
+                "workplace": "U",
+                "location": "茨城県",
+                "period": "令和６年１月ー現在",
+                "tasks": [{
+                    "task": "Refactored and optimized the codebase of an online meeting and video call app, improving performance and maintainability."
+                },
+                {
+                    "task": "Spearheaded the creation and maintenance of Docker containers for smooth deployment processes."
+                },
+                {
+                    "task": "Developed backend infrastructure for a delivery robot Android application, ensuring system integration and seamless operation."
+                },
+                {
+                    "task": "Collaborated with design and QA teams to deliver high-quality products on time."
+                },
+                {
+                    "task": "Reduced user churn by 20% by fixing critical bugs in the online meeting app."
+                },
+                {
+                    "task": "Technologies: Docker, Git, Backlog, Android, VR, RESTful APIs, PostgreSQL, A-Frame, Java, Python, NodeJS, Express, TypeScript"
+                }
+            ]
+            }]
+        },
+        "projects": {
+            "tag": "PROJECTS",
+            "project1": {
+                "title": "Android Application for Food Delivery Robot",
+                "description": "Developed an Android application in Java to manage a food delivery robot’s operations and task scheduling."
+              },
+              "project2": {
+                "title": "Docker Environment Setup for Computer Vision System",
+                "description": "Configured a Docker environment to launch the entire computer vision system for side sensor analysis."
+              },
+              "project3": {
+                "title": "Website Refactoring and Optimization (TypeScript & React)",
+                "description": "Refactored a website’s front end using TypeScript and React, improving performance and maintainability."
+              },
+              "project4": {
+                "title": "API Backend Development with NodeJS and Express",
+                "description": "Built a robust backend to handle API requests, improving the efficiency of website-server interactions."
+              },
+              "project5": {
+                "title": "Order Automation System Extension (Ruby on Rails)",
+                "description": "Enhanced an order automation system by adding new functionalities and refining existing features."
+              },
+              "project6": {
+                "title": "Web-Based TimeShare Reservation System",
+                "description": "Developed a reservation system with secure JWT token authentication for web-based bookings service for online meetings."
+              }
+        },
+        "education": {
+            "tag": "EDUCATION",
+            "bachelor": {
+                "degree" : "Bachelor degree",
+                "place": "ビシケク国立大学"
+            },
+            "magister": {
+                "degree" : "Magister degree",
+                "place": "茨城キリスト教大学"
+            } 
+        },
+        "certification": {
+            "tag": "CERTIFICATION",
+            "certifications": [{
+                "title": "日本語能力試験",
+                "level": "N2"
+            }]
+        }
+    },
+    "footer": {
+        "title": "sosi bibu"
+    }
+}

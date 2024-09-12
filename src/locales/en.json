@@ -1,0 +1,123 @@
+{
+    "header": {
+      "welcome": "Welcome",
+      "switchThemeDark": "Switch to Dark",
+      "switchThemeLight": "Switch to Light",
+      "language": "Language"
+    },
+    "maincontent": {
+        "bio": {
+            "tag": "BIO",
+            "name": "Naruto",
+            "number": "0000-00000-00000",
+            "residency": "Japan"
+        },
+
+        "summary": {
+            "tag": "SUMMARY",
+            "description": "Full-stack developer with experience in various client projects, from web-based reservation systems to Android apps. While I've worked across multiple technologies, my passion lies in backend development, particularly in API design and server deployment. I am now looking to specialize in backend development to build scalable, efficient systems and tackle complex challenges."
+        },
+        "skills": {
+            "tag": "SKILLS",
+            "frontend": "Front End: Typescript, React, HTML, CSS, Tailwind.",
+            "backend": "Backend: NodeJS, Python, Java, ExpressJS",
+            "deployment": "Deployment: Linux Server, Linux, Docker.",
+            "language": "Language: Japanese, English, Russian, Kygyz, Uzbek"
+        },
+        "about-me": {
+            "tag": "ABOUT ME",
+            "description": "suck my dick"
+        },
+        "experience": {
+            "tag": "EXPERIENCE",
+            "experiences": [{
+                "position": "Intermship as a Sofware Engineer",
+                "workplace": "U",
+                "location": "Ibaraki",
+                "period": "May 2022 - December 2022",
+                "tasks": [{
+                    "task": "Contributed to code refactoring for enhanced maintainability and code quality."
+                },
+                {
+                    "task": "Assisted in website layout design, emphasizing responsive and user-friendly interfaces."
+                },
+                {
+                    "task": "Debugged and resolved issues, improving the overall system reliability."
+                }]
+            },
+            {
+                "position": "Software Engineer",
+                "workplace": "U",
+                "location": "Ibaraki",
+                "period": "January 2023 - Present",
+                "tasks": [{
+                    "task": "Refactored and optimized the codebase of an online meeting and video call app, improving performance and maintainability."
+                },
+                {
+                    "task": "Spearheaded the creation and maintenance of Docker containers for smooth deployment processes."
+                },
+                {
+                    "task": "Developed backend infrastructure for a delivery robot Android application, ensuring system integration and seamless operation."
+                },
+                {
+                    "task": "Collaborated with design and QA teams to deliver high-quality products on time."
+                },
+                {
+                    "task": "Reduced user churn by 20% by fixing critical bugs in the online meeting app."
+                },
+                {
+                    "task": "Technologies: Docker, Git, Backlog, Android, VR, RESTful APIs, PostgreSQL, A-Frame, Java, Python, NodeJS, Express, TypeScript"
+                }
+            ]
+            }]
+        },
+        "projects": {
+            "tag": "PROJECTS",
+            "projects": [{
+                "title": "Android Application for Food Delivery Robot",
+                "description": "Developed an Android application in Java to manage a food delivery robot’s operations and task scheduling."
+            },
+            {
+                "title": "Docker Environment Setup for Computer Vision System",
+                "description": "Configured a Docker environment to launch the entire computer vision system for side sensor analysis."
+            },
+             {
+                "title": "Website Refactoring and Optimization (TypeScript & React)",
+                "description": "Refactored a website’s front end using TypeScript and React, improving performance and maintainability."
+            },
+            {
+                "title": "API Backend Development with NodeJS and Express",
+                "description": "Built a robust backend to handle API requests, improving the efficiency of website-server interactions."
+            },
+            {
+                "title": "Order Automation System Extension (Ruby on Rails)",
+                "description": "Enhanced an order automation system by adding new functionalities and refining existing features."
+            },
+            {
+                "title": "Web-Based TimeShare Reservation System",
+                "description": "Developed a reservation system with secure JWT token authentication for web-based bookings service for online meetings."
+            }]
+        },
+        "education": {
+            "tag": "EDUCATION",
+            "bachelor": {
+                "degree" : "Bachelor degree",
+                "place": "Bishkek State University"
+            },
+            "magister": {
+                "degree" : "Magister degree",
+                "place": "Ibaraki Cristian University"
+            } 
+        },
+        "certification": {
+            "tag": "CERTIFICATION",
+            "certifications": [{
+                "title": "Japanese-Language Proficiency Test",
+                "level": "N2"
+            }]
+        }
+    },
+    "footer": {
+        "title": "sosi bibu"
+    }
+}
