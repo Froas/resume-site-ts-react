@@ -12,7 +12,7 @@ export interface BlockContextValue {
 
 const BlockContext = (props: BlockContextValue) => {
     return (
-    <div className="">
+    <div className="mb-1">
         <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
         <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
             {props.header}

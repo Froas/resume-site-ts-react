@@ -10,12 +10,15 @@
             "tag": "BIO",
             "name": "Naruto",
             "number": "0000-00000-00000",
+            "email": "test@gmail.com",
+            "github": "github",
+            "linkedIn": "linkedIn",
             "residency": "Japan"
         },
 
         "summary": {
             "tag": "SUMMARY",
-            "description": "Full-stack developer with experience in various client projects, from web-based reservation systems to Android apps. While I've worked across multiple technologies, my passion lies in backend development, particularly in API design and server deployment. I am now looking to specialize in backend development to build scalable, efficient systems and tackle complex challenges."
+            "description": "Experienced full-stack developer with a broad skill set ranging from web-based systems to Android applications. With a deep interest in backend development, I focus on API design, server deployment, and optimizing system performance. I am now seeking to specialize in backend development, leveraging my experience to build scalable, efficient systems that meet the needs of modern applications."       
         },
         "skills": {
             "tag": "SKILLS",
@@ -26,12 +29,12 @@
         },
         "about-me": {
             "tag": "ABOUT ME",
-            "description": "suck my dick"
+            "description": "I've had the chance to explore a wide range of technologies, from frontend development to full-stack projects and mobile apps, but backend development has always been my true passion. I love diving deep into complex algorithms like quicksort and others, finding immense satisfaction when everything falls into place and runs efficiently. Whether it’s optimizing performance or structuring APIs, there’s nothing quite like the feeling of seeing well-designed code work seamlessly. Now, I’m fully committed to growing as a backend specialist, building on the diverse experiences I've gained to master the art of crafting scalable and reliable systems."
         },
         "experience": {
             "tag": "EXPERIENCE",
             "experiences": [{
-                "position": "Intermship as a Sofware Engineer",
+                "position": "Internship as a Sofware Engineer",
                 "workplace": "U",
                 "location": "Ibaraki",
                 "period": "May 2022 - December 2022",

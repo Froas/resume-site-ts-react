@@ -1,6 +1,11 @@
 import BlockContext from "./BlockContext";
 import { BlockContextProps } from "./BlockContext"
 import { useTranslation } from "react-i18next";
+import { Switch } from "./ui/Switch";
+import { Button } from "./ui/Button"
+import BioContext from "./BioContext"
+import { BioContextType } from "./BioContext"
+
 const MainContent = () => {
     const { t } = useTranslation();
     const experiences = t("maincontent.experience.experiences", { returnObjects: true }) as Array<{
@@ -19,16 +24,22 @@ const MainContent = () => {
         title: string;
         level: string;
       }>;
+
+
+    const bio = t("maincontent.bio", { returnObjects: true }) as BioContextType;
+
+    
     return ( 
         <>
+        <BioContext bio={bio} />
         <BlockContext header={t("maincontent.summary.tag")} description={t("maincontent.summary.description")}></BlockContext>
         <BlockContext header={t("maincontent.about-me.tag")} description={t("maincontent.about-me.description")}></BlockContext>
         {experiences.map((experience, index) => (
              <BlockContext header={index < 1 ? t("maincontent.experience.tag"): ""} secondHeader={experience.position + " | "  + experience.workplace + " | " + experience.location + " | " + experience.period} listItems={experience.tasks}></BlockContext>
         ))}
-         <BlockContext header={t("maincontent.projects.tag")} projectItem={projects}></BlockContext>
-         <BlockContext header={t("maincontent.education.tag")} description={t("maincontent.education.bachelor.degree") + " | " + t("maincontent.education.bachelor.place")}></BlockContext>
-         <BlockContext header={t("maincontent.certification.tag")} description={certifications[0].title + " | " + certifications[0].level}></BlockContext>
+        <BlockContext header={t("maincontent.projects.tag")} projectItem={projects}></BlockContext>
+        <BlockContext header={t("maincontent.education.tag")} description={t("maincontent.education.bachelor.degree") + " | " + t("maincontent.education.bachelor.place")}></BlockContext>
+        <BlockContext header={t("maincontent.certification.tag")} description={certifications[0].title + " | " + certifications[0].level}></BlockContext>
         </>
      );
 }
