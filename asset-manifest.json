@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/resume-site-ts-react/static/css/main.c05bc495.css",
+    "main.js": "/resume-site-ts-react/static/js/main.1b773de6.js",
+    "index.html": "/resume-site-ts-react/index.html",
+    "main.c05bc495.css.map": "/resume-site-ts-react/static/css/main.c05bc495.css.map",
+    "main.1b773de6.js.map": "/resume-site-ts-react/static/js/main.1b773de6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c05bc495.css",
+    "static/js/main.1b773de6.js"
+  ]
+}
