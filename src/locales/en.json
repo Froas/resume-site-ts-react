@@ -6,8 +6,8 @@
       "language": "Language"
     },
     "maincontent": {
-        "bio": {
-            "tag": "BIO",
+        "contact": {
+            "tag": "Contact Information",
             "name": {
                 "name": "Name",
                 "value": "Kurosaki Ichigo"
@@ -29,7 +29,7 @@
                 "value": "www.linkedIn.com"
             },
             "residency": {
-                "residency": "Residency",
+                "residency": "Residence",
                 "country": "Japan",
                 "prefecture": "Tokyo",
                 "city": "Tokyo"

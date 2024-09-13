@@ -111,7 +111,7 @@ const MainContent = () => {
         }>;
         const fetchedSkills = t("maincontent.skills", { returnObjects: true }) as SkillsType;
 
-        const fetchedBio = t("maincontent.bio", { returnObjects: true }) as BioContextType;
+        const fetchedBio = t("maincontent.contact", { returnObjects: true }) as BioContextType;
 
         const fetchEducation = t("maincontent.education", { returnObjects: true}) as EducationType;
 

@@ -6,8 +6,8 @@
       "language": "言語"
     },
     "maincontent": {
-        "bio": {
-            "tag": "人物紹介約",
+        "contact": {
+            "tag": "連絡先情報",
             "name": {
                 "name": "氏名",
                 "value": "黒崎一護"
