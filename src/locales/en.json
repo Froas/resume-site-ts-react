@@ -154,6 +154,6 @@
         }
     },
     "footer": {
-        "title": "Created using Tailwind CSS, Shadcn/ui, TypeScript, and React"
+        "title": "Created using Tailwind CSS, Shadcn/ui, Heroicons, TypeScript, and React"
     }
 }

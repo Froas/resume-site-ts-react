@@ -152,6 +152,6 @@
         }
     },
     "footer": {
-        "title": "sosi bibu"
+        "title": "Created using Tailwind CSS, Shadcn/ui, Heroicons, TypeScript, and React"
     }
 }
