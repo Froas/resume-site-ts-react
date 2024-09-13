@@ -8,12 +8,32 @@
     "maincontent": {
         "bio": {
             "tag": "BIO",
-            "name": "Naruto",
-            "number": "0000-00000-00000",
-            "email": "test@gmail.com",
-            "github": "github",
-            "linkedIn": "linkedIn",
-            "residency": "Japan"
+            "name": {
+                "name": "Name",
+                "value": "Kurosaki Ichigo"
+            },
+            "number": {
+                "number": "Tel",
+                "value": "0000-00000-00000"
+            },
+            "email": {
+                "email": "E-mail",
+                "value": "test@test.com"
+            },
+            "github": {
+                "github": "Github",
+                "value": "www.github.com/test"
+            },
+            "linkedIn": {
+                "linkedIn": "LinkedIn",
+                "value": "www.linkedIn.com"
+            },
+            "residency": {
+                "residency": "Residency",
+                "country": "Japan",
+                "prefecture": "Tokyo",
+                "city": "Tokyo"
+            }
         },
 
         "summary": {
@@ -22,10 +42,22 @@
         },
         "skills": {
             "tag": "SKILLS",
-            "frontend": "Front End: Typescript, React, HTML, CSS, Tailwind.",
-            "backend": "Backend: NodeJS, Python, Java, ExpressJS",
-            "deployment": "Deployment: Linux Server, Linux, Docker.",
-            "language": "Language: Japanese, English, Russian, Kygyz, Uzbek"
+            "frontend": {
+                "category": "Front End:",
+                "technologies": "Typescript, React, HTML, CSS, Tailwind."
+            },
+            "backend": {
+                "category": "Backend:",
+                "technologies": "NodeJS, Python, Java, ExpressJS"
+            },
+            "deployment": {
+                "category": "Deployment:",
+                "technologies": "Linux Server, Linux, Docker."
+            },
+            "languages":{
+                "category": "Languages:",
+                "technologies": "Japanese, English, Russian, Kyryz, Uzbek"
+            }
         },
         "about-me": {
             "tag": "ABOUT ME",
@@ -105,7 +137,8 @@
             "tag": "EDUCATION",
             "bachelor": {
                 "degree" : "Bachelor degree",
-                "place": "Bishkek State University"
+                "place": "Bishkek State University",
+                "date": ""
             },
             "magister": {
                 "degree" : "Magister degree",
@@ -113,7 +146,7 @@
             } 
         },
         "certification": {
-            "tag": "CERTIFICATION",
+            "tag": "CERTIFICATIONS",
             "certifications": [{
                 "title": "Japanese-Language Proficiency Test",
                 "level": "N2"
@@ -121,6 +154,6 @@
         }
     },
     "footer": {
-        "title": "sosi bibu"
+        "title": "Created using Tailwind CSS, Shadcn/ui, TypeScript, and React"
     }
 }

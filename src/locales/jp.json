@@ -7,10 +7,33 @@
     },
     "maincontent": {
         "bio": {
-            "tag": "自己紹介",
-            "name": "ナルト",
-            "number": "0000-00000-00000",
-            "residency": "日本"
+            "tag": "人物紹介約",
+            "name": {
+                "name": "氏名",
+                "value": "黒崎一護"
+            },
+            "number": {
+                "number": "Tel",
+                "value": "0000-00000-00000"
+            },
+            "email": {
+                "email": "E-mail",
+                "value": "test@test.com"
+            },
+            "github": {
+                "github": "Github",
+                "value": "www.github.com/test"
+            },
+            "linkedIn": {
+                "linkedIn": "LinkedIn",
+                "value": "www.linkedIn.com"
+            },
+            "residency": {
+                "residency": "住所",
+                "country": "日本",
+                "prefecture": "東京都",
+                "city": "東京"
+            }
         },
         "summary": {
             "tag": "概要",
@@ -18,30 +41,42 @@
         },
         "skills": {
             "tag": "スキル",
-            "frontend": "フロントエンド: Typescript, React, HTML, CSS, Tailwind.",
-            "backend": "バックエンド: NodeJS, Python, Java, ExpressJS",
-            "deployment": "デプロイ: Linux, Docker.",
-            "language": "言語: 日本語、 英語、 ロシア語、キルギス語、ウズベク語"
+            "frontend": {
+                "category": "フロントエンド:",
+                "technologies": "Typescript, React, HTML, CSS, Tailwind."
+            },
+            "backend": {
+                "category": "バックエンド:",
+                "technologies": "NodeJS, Python, Java, ExpressJS"
+            },
+            "deployment": {
+                "category": "デプロイ:",
+                "technologies": "Linux Server, Linux, Docker."
+            },
+            "languages":{
+                "category": "言語:",
+                "technologies": "日本語, 英語, ロシア語, キルギス語, ウズベク語"
+            }
         },
-        "about me": {
-            "tag": "ABOUT ME",
-            "description": "suck my dick"
+        "about-me": {
+            "tag": "自己紹介",
+            "description": "私は、フロントエンド開発からフルスタックプロジェクト、モバイルアプリまで、幅広い技術を探求する機会を得ましたが、バックエンド開発こそが私の真の情熱です。クイックソートのような複雑なアルゴリズムに深く入り込み、すべてがうまく組み合わさって効率的に動作する瞬間に大きな満足感を得ています。パフォーマンスの最適化やAPIの設計に取り組む際、うまく設計されたコードがシームレスに動作するのを見ると、本当に特別な感覚があります。今では、バックエンドスペシャリストとして成長することに完全に専念しており、これまでに得た多様な経験を活かして、スケーラブルで信頼性の高いシステムを構築する技術を極めることを目指しています。"
         },
         "experience": {
-            "tag": "EXPERIENCE",
+            "tag": "職歴 ",
             "experiences": [{
                 "position": "ソフトウェアエンジニア インターンシップ",
                 "workplace": "U",
                 "location": "茨城県",
                 "period": "令和５年５月ー令和５年１２月",
                 "tasks": [{
-                    "task": "Contributed to code refactoring for enhanced maintainability and code quality."
+                    "task": "コードのリファクタリングに貢献し、保守性とコードの品質を向上させました。"
                 },
                 {
-                    "task": "Assisted in website layout design, emphasizing responsive and user-friendly interfaces."
+                    "task": "ウェブサイトのレイアウトデザインを支援し、レスポンシブでユーザーフレンドリーなインターフェースを重視しました。"
                 },
                 {
-                    "task": "Debugged and resolved issues, improving the overall system reliability."
+                    "task": "システムの信頼性を向上させるために、デバッグと問題解決を行いました。"
                 }]
             },
             {
@@ -50,57 +85,57 @@
                 "location": "茨城県",
                 "period": "令和６年１月ー現在",
                 "tasks": [{
-                    "task": "Refactored and optimized the codebase of an online meeting and video call app, improving performance and maintainability."
+                    "task": "オンライン会議およびビデオ通話アプリのコードベースをリファクタリングし、性能と保守性を向上させました。"
                 },
                 {
-                    "task": "Spearheaded the creation and maintenance of Docker containers for smooth deployment processes."
+                    "task": "Dockerコンテナの作成と保守を先導し、スムーズなデプロイプロセスを確保しました。"
                 },
                 {
-                    "task": "Developed backend infrastructure for a delivery robot Android application, ensuring system integration and seamless operation."
+                    "task": "デリバリーロボットのAndroidアプリケーション用バックエンドインフラを開発し、システムの統合とスムーズな運用を確保しました。"
                 },
                 {
-                    "task": "Collaborated with design and QA teams to deliver high-quality products on time."
+                    "task": "設計チームおよびQAチームと協力し、高品質な製品を期日内に提供しました。"
                 },
                 {
-                    "task": "Reduced user churn by 20% by fixing critical bugs in the online meeting app."
+                    "task": "オンライン会議アプリの重大なバグを修正し、ユーザーの離脱率を20％削減しました。"
                 },
                 {
-                    "task": "Technologies: Docker, Git, Backlog, Android, VR, RESTful APIs, PostgreSQL, A-Frame, Java, Python, NodeJS, Express, TypeScript"
+                    "task": "使用技術: Docker、Git、Backlog、Android、VR、RESTful API、PostgreSQL、A-Frame、Java、Python、NodeJS、Express、TypeScript"
                 }
             ]
             }]
         },
         "projects": {
-            "tag": "PROJECTS",
-            "project1": {
-                "title": "Android Application for Food Delivery Robot",
-                "description": "Developed an Android application in Java to manage a food delivery robot’s operations and task scheduling."
-              },
-              "project2": {
-                "title": "Docker Environment Setup for Computer Vision System",
-                "description": "Configured a Docker environment to launch the entire computer vision system for side sensor analysis."
-              },
-              "project3": {
-                "title": "Website Refactoring and Optimization (TypeScript & React)",
-                "description": "Refactored a website’s front end using TypeScript and React, improving performance and maintainability."
-              },
-              "project4": {
-                "title": "API Backend Development with NodeJS and Express",
-                "description": "Built a robust backend to handle API requests, improving the efficiency of website-server interactions."
-              },
-              "project5": {
-                "title": "Order Automation System Extension (Ruby on Rails)",
-                "description": "Enhanced an order automation system by adding new functionalities and refining existing features."
-              },
-              "project6": {
-                "title": "Web-Based TimeShare Reservation System",
-                "description": "Developed a reservation system with secure JWT token authentication for web-based bookings service for online meetings."
-              }
+            "tag": "プロジェクト",
+            "projects": [{
+                "title": "デリバリーロボット向けAndroidアプリケーション",
+                "description": "デリバリーロボットの運用とタスクスケジューリングを管理するためのAndroidアプリケーションをJavaで開発しました。"
+            },
+            {
+                "title": "コンピュータービジョンシステムのDocker環境設定",
+                "description": "サイドセンサー解析のためのコンピュータービジョンシステムを起動するDocker環境を構築しました。"
+            },
+            {
+                "title": "ウェブサイトのリファクタリングと最適化（TypeScript＆React）",
+                "description": "TypeScriptとReactを使用してウェブサイトのフロントエンドをリファクタリングし、性能と保守性を向上させました。"
+            },
+            {
+                "title": "NodeJSとExpressを使用したAPIバックエンド開発",
+                "description": "APIリクエストを処理する強力なバックエンドを構築し、ウェブサイトとサーバー間の効率的なやり取りを改善しました。"
+            },
+            {
+                "title": "注文自動化システムの拡張（Ruby on Rails）",
+                "description": "新機能を追加し、既存機能を改善することで、注文自動化システムを強化しました。"
+            },
+            {
+                "title": "ウェブベースのタイムシェア予約システム",
+                "description": "JWTトークン認証を使用して、ウェブベースのオンライン会議予約サービスの予約システムを開発しました。"
+            }]
         },
         "education": {
-            "tag": "EDUCATION",
+            "tag": "学歴 ",
             "bachelor": {
-                "degree" : "Bachelor degree",
+                "degree" : "学士号",
                 "place": "ビシケク国立大学"
             },
             "magister": {
@@ -109,7 +144,7 @@
             } 
         },
         "certification": {
-            "tag": "CERTIFICATION",
+            "tag": "資格",
             "certifications": [{
                 "title": "日本語能力試験",
                 "level": "N2"

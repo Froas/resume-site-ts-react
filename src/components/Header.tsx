@@ -9,7 +9,7 @@ const Header = () => {
     const { t } = useTranslation();
     const { language, toggleLanguage } = useLanguage();
     const { theme, toggleTheme } = useTheme();
-    const [isChecked, setIsChecked] = useState(false);
+    const [ isChecked, setIsChecked ] = useState(false);
     const toggleSwitchAndButton = () => {
         console.log('Switch toggled');
         toggleTheme();
@@ -26,17 +26,21 @@ const Header = () => {
 
     return ( 
         <header className={`p-4 flex justify-end items-center gap-4 ${theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
-            <Button className="bg-gray-600 text-white" onClick={() => toggleLanguage(language === 'en' ? 'jp' : 'en')}>
+            <Button 
+                className={`${theme === 'dark' ? 'bg-gray-400 text-black hover:bg-white' : 'bg-blue-500 text-white hover:bg-blue-950'} `} 
+                onClick={() => toggleLanguage(language === 'en' ? 'jp' : 'en')}>
                 {language === 'en' ? 'English' : '日本語'}
             </Button>
 
             <Switch
                 checked={isChecked}
                 onCheckedChange={toggleSwitchAndButton}
-                className="relative inline-flex h-6 w-11 items-center rounded-full data-[state=!checked]:bg-black data-[state=checked]:bg-white"
+                className="relative inline-flex h-6 w-11 items-center rounded-full data-[state=unchecked]:bg-blue-950 data-[state=checked]:bg-white"
             />
 
-            <Button onClick={toggleSwitchAndButton}>
+            <Button 
+                className={`${theme === 'dark' ? 'bg-gray-400 text-black hover:bg-white' : 'bg-blue-950 text-white'}`} 
+                onClick={toggleSwitchAndButton}>
                 {isChecked ? t('header.switchThemeDark') : t('header.switchThemeLight')}
             </Button>
         </header>
