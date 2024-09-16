@@ -27,19 +27,19 @@ const Header = () => {
     return ( 
         <header className={`p-4 flex justify-end items-center gap-4 ${theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
             <Button 
-                className={`${theme === 'dark' ? 'bg-gray-400 text-black hover:bg-white' : 'bg-blue-400 text-white hover:bg-blue-950'} `} 
+                className={`${theme === 'dark' ? 'bg-gray-400 text-black hover:bg-white' : 'bg-customBlue text-white hover:bg-blue-950'} `} 
                 onClick={() => toggleLanguage(language === 'en' ? 'jp' : 'en')}>
                 {language === 'en' ? 'English' : '日本語'}
             </Button>
 
-            <Switch
+            {/* <Switch
                 checked={isChecked}
                 onCheckedChange={toggleSwitchAndButton}
                 className="relative inline-flex h-6 w-11 items-center rounded-full data-[state=unchecked]:bg-blue-950 data-[state=checked]:bg-white"
-            />
+            /> */}
 
             <Button 
-                className={`${theme === 'dark' ? 'bg-gray-400 text-black hover:bg-white' : 'bg-blue-950 text-white'}`} 
+                className={`${theme === 'dark' ? 'bg-gray-400 text-black hover:bg-white' : 'bg-customPurple text-white'}`} 
                 onClick={toggleSwitchAndButton}>
                 {isChecked ? t('header.switchThemeDark') : t('header.switchThemeLight')}
             </Button>

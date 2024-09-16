@@ -7,14 +7,14 @@
     },
     "maincontent": {
         "contact": {
-            "tag": "Contact Information",
+            "tag": "CONTACT INFORMATION",
             "name": {
                 "name": "Name",
                 "value": "Kurosaki Ichigo"
             },
             "number": {
                 "number": "Tel",
-                "value": "0000-00000-00000"
+                "value": "000-0000-0000"
             },
             "email": {
                 "email": "E-mail",
@@ -30,9 +30,7 @@
             },
             "residency": {
                 "residency": "Residence",
-                "country": "Japan",
-                "prefecture": "Tokyo",
-                "city": "Tokyo"
+                "value": "Japan, Tokyo, Minato"
             }
         },
 
@@ -48,7 +46,7 @@
             },
             "backend": {
                 "category": "Backend:",
-                "technologies": "NodeJS, Python, Java, ExpressJS"
+                "technologies": "NodeJS, Python, Java, ExpressJS, FastAPI"
             },
             "deployment": {
                 "category": "Deployment:",
@@ -67,7 +65,7 @@
             "tag": "EXPERIENCE",
             "experiences": [{
                 "position": "Internship as a Sofware Engineer",
-                "workplace": "U",
+                "workplace": "Google LLC",
                 "location": "Ibaraki",
                 "period": "May 2022 - December 2022",
                 "tasks": [{
@@ -82,7 +80,7 @@
             },
             {
                 "position": "Software Engineer",
-                "workplace": "U",
+                "workplace": "Google LLC",
                 "location": "Ibaraki",
                 "period": "January 2023 - Present",
                 "tasks": [{
@@ -154,6 +152,6 @@
         }
     },
     "footer": {
-        "title": "Created using Tailwind CSS, Shadcn/ui, Heroicons, TypeScript, and React"
+        "title": "Created using Tailwind CSS, Shadcn/ui, TypeScript, and React"
     }
 }

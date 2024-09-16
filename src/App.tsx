@@ -11,7 +11,7 @@ function App() {
       <LanguageProvider>
       <ThemeProvider>
         <Header/>
-        <div className="p-10 bg-blue-300 text-red dark:bg-gray-900 dark:text-white">
+        <div className="p-10 bg-customBlueWhite text-red dark:bg-gray-900 dark:text-white">
          <MainContent/>
         </div>
         <Footer />

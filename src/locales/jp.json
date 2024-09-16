@@ -30,9 +30,7 @@
             },
             "residency": {
                 "residency": "住所",
-                "country": "日本",
-                "prefecture": "東京都",
-                "city": "東京"
+                "value": "日本茨城県水戸市"
             }
         },
         "summary": {
@@ -47,7 +45,7 @@
             },
             "backend": {
                 "category": "バックエンド:",
-                "technologies": "NodeJS, Python, Java, ExpressJS"
+                "technologies": "NodeJS, Python, Java, ExpressJS, FastAPI"
             },
             "deployment": {
                 "category": "デプロイ:",
@@ -66,7 +64,7 @@
             "tag": "職歴 ",
             "experiences": [{
                 "position": "ソフトウェアエンジニア インターンシップ",
-                "workplace": "U",
+                "workplace": "Google LLC",
                 "location": "茨城県",
                 "period": "令和５年５月ー令和５年１２月",
                 "tasks": [{
@@ -81,7 +79,7 @@
             },
             {
                 "position": "ソフトウェアエンジニア",
-                "workplace": "U",
+                "workplace": "Google LLC",
                 "location": "茨城県",
                 "period": "令和６年１月ー現在",
                 "tasks": [{

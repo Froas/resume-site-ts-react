@@ -1,143 +1,54 @@
-import BlockContext, { SkillsType, EducationType, ExperienceType } from "./BlockContext";
+import ContextBlock from "./ContentBlock";
 import { useTranslation } from "react-i18next";
-import BioContext from "./BioContext";
-import { BioContextType } from "./BioContext";
-import { useState, useEffect } from "react";
+import ContactBlock from "./ContactBlock";
+import { ContactInfoType, SkillsType, EducationType, ExperienceType } from "./types";
+// import { BioContextType } from "./ContactBlock";
 
 const MainContent = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     
-    const [experiences, setExperiences] = useState<ExperienceType>({
-        tag: "",
-        experiences: [
-            {
-                position: "",
-                workplace: "",
-                location: "",
-                period: "",
-                tasks: [
-                    {
-                        task: ""
-                    }
-                ]
-            }
-        ]
-    });
 
-    const [projects, setProjects] = useState<Array<{
+    const experiences = t("maincontent.experience", { returnObjects: true }) as ExperienceType;
+
+    const projects = t("maincontent.projects.projects", { returnObjects: true }) as Array<{
         title: string;
         description: string;
-    }>>([]);
+    }>;
 
-    const [skills, setSkills] = useState<SkillsType>({
-        tag: "",
-        frontend: {
-            category: "",
-            technologies: ""
-        },
-        backend: {
-            category: "",
-            technologies: ""
-        },
-        deployment: {
-            category: "",
-            technologies: ""
-        },
-        languages: {
-            category: "",
-            technologies: ""
-        }
-    });
-
-    const [education, setEducation] = useState<EducationType>({
-        tag: "",
-        bachelor: {
-            degree: "",
-            place: "",
-            date: ""
-        },
-        magister: {
-            degree: "",
-            place: "",
-            date: ""
-        }
-    })
-
-    const [certifications, setCertifications] = useState<Array<{
+    const certifications = t("maincontent.certification.certifications", { returnObjects: true }) as Array<{
         title: string;
         level: string;
-    }>>([]);
-    const [bio, setBio] = useState<BioContextType>({
-        tag: "",
-        name: {
-            name: "",
-            value: ""
-        },
-        number: {
-            number: "",
-            value: ""
-        },
-        email: {
-            email: "",
-            value: ""
-        },
-        github: {
-            github: "",
-            value: ""
-        },
-        linkedIn: {
-            linkedIn: "",
-            value: ""
-        },
-        residency: {
-            residency: "",
-            country: "",
-            prefecture: "",
-            city: ""
-        }
-    });
+    }>;
+    const skills = t("maincontent.skills", { returnObjects: true }) as SkillsType;
 
-    useEffect(() => {
-        const fetchedExperiences = t("maincontent.experience", { returnObjects: true }) as ExperienceType;
-
-        const fetchedProjects = t("maincontent.projects.projects", { returnObjects: true }) as Array<{
-            title: string;
-            description: string;
-        }>;
-
-        const fetchedCertifications = t("maincontent.certification.certifications", { returnObjects: true }) as Array<{
-            title: string;
-            level: string;
-        }>;
-        const fetchedSkills = t("maincontent.skills", { returnObjects: true }) as SkillsType;
-
-        const fetchedBio = t("maincontent.contact", { returnObjects: true }) as BioContextType;
-
-        const fetchEducation = t("maincontent.education", { returnObjects: true}) as EducationType;
-
-        setEducation(fetchEducation);
-        setSkills(fetchedSkills);
-        setExperiences(fetchedExperiences);
-        setProjects(fetchedProjects);
-        setCertifications(fetchedCertifications);
-        setBio(fetchedBio);
-    }, [i18n.language]);
-
+    const contact = t("maincontent.contact", { returnObjects: true }) as ContactInfoType;
+    const education = t("maincontent.education", { returnObjects: true}) as EducationType;
+    // const { title, summary, subtitle, tasks, skills, projects, educationDetails, workExperience, certifications,} = props.value
     return (
         <>
-            <BioContext bio={bio} />
-            <BlockContext value={{ header: t("maincontent.summary.tag"), description: t("maincontent.summary.description") }} />
-            <BlockContext value={{ header: t("maincontent.about-me.tag"), description: t("maincontent.about-me.description") }} />
-            <BlockContext value={{ header: skills.tag, skillItems: skills }} />
-            <BlockContext value={{header: experiences.tag, experiences: experiences }}/>
-            <BlockContext value={{ header: t("maincontent.projects.tag"), projectItems: projects }} />
-            <BlockContext value={{ header: education.tag, education: education }} />
-            <BlockContext 
-                value={{ 
-                    header: t("maincontent.certification.tag"),
-                    certification:  certifications
-                }}
-            />
+
+            <div className="flex flex-col md:flex-row md:space-x-4">
+                <div className="flex-1 flex flex-col">
+                    <ContactBlock contact={contact} />
+                </div>
+                <div className="flex-1 flex flex-col">
+                    <ContextBlock value={{ title: skills.tag, skills: skills }} />
+                </div>
+            </div>
+            {/* <ContactBlock contact={contact} /> */}
+            <ContextBlock value={{ title: t("maincontent.summary.tag"), summary: t("maincontent.summary.description") }} />
+            <ContextBlock value={{ title: t("maincontent.about-me.tag"), summary: t("maincontent.about-me.description") }} />
+            {/* <ContextBlock value={{ title: skills.tag, skills: skills }} /> */}
+            <ContextBlock value={{title: experiences.tag, workExperience: experiences }}/>
+            <ContextBlock value={{ title: t("maincontent.projects.tag"), projects: projects }} />
+            <div className="flex flex-col md:flex-row md:space-x-4">
+                <div className="md:w-1/2">
+                    <ContextBlock value={{ title: education.tag, educationDetails: education }} />
+                </div>
+                <div className="md:w-1/2">
+                    <ContextBlock value={{ title: t("maincontent.certification.tag"), certifications: certifications }} />
+                </div>
+            </div>
         </>
     );
 }
