@@ -1,5 +1,5 @@
 {
-  "homepage": "http://froas.github.io/resume-site-ts-react/",
+  "homepage": "http://froas.github.io/resume-site-ts-react",
   "name": "my-resume-website",
   "version": "0.1.0",
   "private": true,
@@ -44,7 +44,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",

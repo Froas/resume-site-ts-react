@@ -17,7 +17,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/resume-site-ts-react">
       <LanguageProvider>
         <ThemeProvider>
           <Routes>
