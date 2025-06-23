@@ -6,6 +6,8 @@ import { Switch } from "./ui/Switch";
 import { useState, useEffect } from "react"
 import { useNavigate, useLocation } from "react-router-dom";
 import GooeyNav from './GooeyNav';
+// @ts-ignore: no types for html2pdf.js
+import html2pdf from 'html2pdf.js';
 
 const Header = () => {
     const { t } = useTranslation();
@@ -56,7 +58,7 @@ const Header = () => {
     return (
       <header className={`p-4 flex justify-between items-center gap-4 ${theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
         <div />
-        <div className="flex justify-end w-full">
+        <div className="flex justify-end w-full items-center gap-2">
           <GooeyNav
             items={[
               {
@@ -69,8 +71,19 @@ const Header = () => {
               },
             ]}
             initialActiveIndex={0}
- 
           />
+          <button
+            style={{ display: 'none' }}
+            onClick={() => {
+              const element = document.getElementById('resume-content');
+              if (element) {
+                html2pdf().from(element).save('resume.pdf');
+              }
+            }}
+            className="ml-4 px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 transition-colors text-sm shadow"
+          >
+            Download Resume
+          </button>
         </div>
       </header>
     );

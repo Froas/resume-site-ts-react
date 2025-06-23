@@ -15,7 +15,7 @@ const ResumePage: React.FC = () => {
     >
       <ParticlesBackground />
       <Header />
-      <div className="p-10  text-red dark:text-white backdrop-blur-sm">
+      <div id="resume-content" className="p-10 text-red dark:text-white backdrop-blur-sm">
         <MainContent />
       </div>
       <Footer />
