@@ -206,13 +206,11 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
             content: "";
             position: absolute;
             inset: 0;
+            background: #5067EB;
             transform: scale(0);
             opacity: 0;
             z-index: -1;
             border-radius: 9999px;
-          }
-          .dark .effect.filter::after {
-            background: white;
           }
           .effect.active::after {
             animation: pill 0.3s ease both;

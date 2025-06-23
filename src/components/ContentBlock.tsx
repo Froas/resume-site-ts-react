@@ -1,8 +1,6 @@
 import { Database } from "lucide-react";
-import { ComputerDesktopIcon, CloudIcon, CommandLineIcon, CodeBracketSquareIcon, LanguageIcon, AcademicCapIcon, NewspaperIcon, DocumentCheckIcon, BuildingOffice2Icon, BriefcaseIcon, CogIcon, CubeTransparentIcon, CpuChipIcon, FireIcon } from "@heroicons/react/24/outline";
-import { ResumeContexProps, InfoItemProps, SectionProps } from './types'
-
-
+import { ComputerDesktopIcon, CloudIcon, CommandLineIcon, ServerStackIcon, LanguageIcon, AcademicCapIcon, NewspaperIcon, DocumentCheckIcon, BuildingOffice2Icon, BriefcaseIcon, CogIcon, CubeTransparentIcon, CpuChipIcon, FireIcon } from "@heroicons/react/24/outline";
+import { ResumeContexProps, InfoItemProps, SectionProps, ProjectItem } from './types'
 
 const ContextBlock = (value : ResumeContexProps) => {
 
@@ -138,9 +136,9 @@ const ContextBlock = (value : ResumeContexProps) => {
               </div>
             )}
             {/* Project */}
-            {projects && projects?.length > 0 && (
+            {projects && (projects as ProjectItem[])?.length > 0 && (
               <Section>
-                {projects.map((item, index) => (
+                {(projects as ProjectItem[]).map((item, index) => (
                   <div key={ index} className="mb-4">
                     <div className="flex flex-col sm:flex-row items-start sm:items-center space-x-0 sm:space-x-2">
                         <FireIcon className="w-5 h-5 mb-2 sm:mb-0" />
@@ -151,6 +149,12 @@ const ContextBlock = (value : ResumeContexProps) => {
                     <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 text-base sm:text-lg">
                       <li>{item.description}</li>
                     </ul>
+                    {item.technologies && (
+                      <div className="flex items-center space-x-2 mt-1">
+                        <ServerStackIcon className="w-5 h-5 text-blue-500 dark:text-blue-400" />
+                        <span className="text-sm sm:text-base text-gray-700 dark:text-gray-300">{item.technologies}</span>
+                      </div>
+                    )}
                   </div>
                 ))}
               </Section>

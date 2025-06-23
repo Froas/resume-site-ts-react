@@ -34,7 +34,7 @@
             },
             "visa": {
                 "visa": "Visa status",
-                "value": "Working visa [技術・人文知識・国際義務]"
+                "value": "Working visa - 技術・人文知識・国際義務"
             }
         },
 
@@ -46,7 +46,7 @@
             "tag": "SKILLS",
             "frontend": {
                 "category": "Front End:",
-                "technologies": "TypeScript, React, Next.js, A-Frame Tailwind."
+                "technologies": "TypeScript, React, Next.js, A-Frame Tailwind"
             },
             "backend": {
                 "category": "Backend:",
@@ -72,68 +72,102 @@
                 "workplace": "Unicast LLC",
                 "location": "Ibaraki",
                 "period": "May 2022 - December 2022",
-                "tasks": [{
-                    "task": "Contributed to code refactoring for enhanced maintainability and code quality."
-                },
-                {
-                    "task": "Assisted in website layout design, emphasizing responsive and user-friendly interfaces."
-                },
-                {
-                    "task": "Debugged and resolved issues, improving the overall system reliability."
-                }]
+                "tasks": [
+                    {
+                        "task": "Refactored legacy C++ and web modules to improve maintainability and enforce modular design patterns."
+                    },
+                    {
+                        "task": "Supported responsive web redesign, optimizing layouts for cross-device usability and accessibility."
+                    },
+                    {
+                        "task": "Diagnosed and resolved software defects, enhancing system stability and reducing downtime."
+                    }
+                ]
             },
             {
                 "position": "Software Engineer",
                 "workplace": "Unicast LLC",
                 "location": "Ibaraki",
                 "period": "January 2023 - Present",
-                "tasks": [{
-                    "task": "Refactored and optimized the codebase of an online meeting and video call app, improving performance and maintainability."
-                },
-                {
-                    "task": "Spearheaded the creation and maintenance of Docker containers for smooth deployment processes."
-                },
-                {
-                    "task": "Developed backend infrastructure for a delivery robot Android application, ensuring system integration and seamless operation."
-                },
-                {
-                    "task": "Collaborated with design and QA teams to deliver high-quality products on time."
-                },
-                {
-                    "task": "Reduced user churn by 20% by fixing critical bugs in the online meeting app."
-                },
-                {
-                    "task": "Technologies: Docker, Git, Backlog, Android, VR, RESTful APIs, PostgreSQL, A-Frame, Java, Python, NodeJS, Express, TypeScript"
-                }
-            ]
+                "tasks": [
+                    {
+                        "task": "Spearheaded containerization of services (LLM infrastructure, robotics simulations, LiDAR perception) using Docker and AWS ECS, streamlining CI/CD workflows."
+                    },
+                    {
+                        "task": "Optimized and refactored an online meeting and video-call app, boosting performance and maintainability."
+                    },
+                    {
+                        "task": "Architected and maintained Docker container infrastructure, streamlining CI/CD deployment pipelines."
+                    },
+                    {
+                        "task": "Developed RESTful backend services for a delivery-robot Android application, ensuring seamless system integration and scalability."
+                    },
+                    {
+                        "task": "Collaborated closely with design and QA teams—conducting code reviews, writing tests, and delivering high-quality features on schedule."
+                    },
+                    {
+                        "task": "Reduced user churn by 20% through targeted bug fixes and performance enhancements in the meeting app."
+                    },
+                    {
+                        "task": "Technologies: Docker, AWS ECS, Nginx, React, TypeScript, Node.js, Express.js, PostgreSQL, Java, Kotlin, Android SDK, Python, C#, C++, ROS 2, A-Frame, JWT, Ruby on Rails"
+                    }
+                ]
             }]
         },
         "projects": {
             "tag": "PROJECTS",
-            "projects": [{
-                "title": "Android Application for Food Delivery Robot",
-                "description": "Developed an Android application in Java to manage a food delivery robot’s operations and task scheduling."
-            },
-            {
-                "title": "Docker Environment Setup for Computer Vision System",
-                "description": "Configured a Docker environment to launch the entire computer vision system for side sensor analysis."
-            },
-             {
-                "title": "Website Refactoring and Optimization (TypeScript & React)",
-                "description": "Refactored a website’s front end using TypeScript and React, improving performance and maintainability."
-            },
-            {
-                "title": "API Backend Development with NodeJS and Express",
-                "description": "Built a robust backend to handle API requests, improving the efficiency of website-server interactions."
-            },
-            {
-                "title": "Order Automation System Extension (Ruby on Rails)",
-                "description": "Enhanced an order automation system by adding new functionalities and refining existing features."
-            },
-            {
-                "title": "Web-Based TimeShare Reservation System",
-                "description": "Developed a reservation system with secure JWT token authentication for web-based bookings service for online meetings."
-            }]
+            "projects": [
+                {
+                  "title": "LLM Infrastructure Deployment",
+                  "description": "Containerized and deployed an internal LLM application based on NextChat on AWS ECS; configured Nginx for IP filtering and basic authentication; established secure inter-container and cloud-instance communication to ensure scalable and secure model serving.",
+                  "technologies": "Docker, AWS ECS, Nginx, NextChat, React, TypeScript"
+                },
+                {
+                  "title": "Receptionist App Modernization",
+                  "description": "Refactored and upgraded an Android receptionist app for compatibility with the latest OS versions and Kotlin syntax; managed dependency updates and a smooth re-release on Google Play while promptly resolving staff-reported issues to maintain application stability.",
+                  "technologies": "Kotlin, Java, Android SDK, Gradle"
+                },
+                {
+                  "title": "AI Visitor Chatbot System",
+                  "description": "Enhanced a visitor-facing AI chatbot by implementing features to prevent overlapping audio outputs; conducted code reviews and analyzed operational logs to drive continuous service quality improvements.",
+                  "technologies": "TypeScript, React, PostgreSQL"
+                },
+                {
+                  "title": "Restoran Food-Delivery Robot Backend",
+                  "description": "Built an Android-based backend in Java to manage an indoor food-delivery robot’s operations, exposing REST endpoints via NanoHttpd for two-way communication with a ROS 2 control stack; implemented order-queue logic that reduced average delivery time from 8 to 6 minutes across 50+ daily routes.",
+                  "technologies": "Java, Android SDK, NanoHttpd, REST, SQLite, ROS 2"
+                },
+                {
+                  "title": "Warehouse Robotics Simulation CI",
+                  "description": "Containerized and performance-tuned a warehouse-robot routing simulation in Docker to enable repeatable testing of pick-and-place algorithms; streamlined deployment across development environments and reduced setup time.",
+                  "technologies": "Docker, Python, C#"
+                },
+                {
+                  "title": "Docker Environment for Computer Vision System",
+                  "description": "Dockerized Livox LiDAR drivers and ROS 2 perception nodes on an NVIDIA Jetson platform to enable portable, repeatable point-cloud ingestion for computer vision workflows.",
+                  "technologies": "Docker, ROS 2, C++, NVIDIA Jetson"
+                },
+                {
+                    "title": "Order Automation System Extension",
+                    "description": "Enhanced a Ruby on Rails order automation platform by developing new features and refactoring existing modules to streamline order processing workflows, increase scalability, and simplify maintenance.",
+                    "technologies": "Ruby on Rails"
+                },
+                {
+                  "title": "Web-Based TimeShare Reservation System",
+                  "description": "Designed and implemented RESTful APIs for a Teams-style meeting booking service using Node.js and Express; integrated a React calendar module to visualize host availability and facilitate seamless participant scheduling.",
+                  "technologies": "Node.js, Express.js, React, PostgreSQL"
+                },
+                {
+                    "title": "Legacy Code Refactoring",
+                    "description": "Refactored a 3,000+ line monolithic C++ codebase into modular, maintainable components, boosting performance by 30% and developing unit tests to validate output consistency with the original implementation.",
+                    "technologies": "C++"
+                },
+                {
+                  "title": "3D Collaboration Platform Integration",
+                  "description": "Integrated calendar scheduling and date-filterable in-world comment cards into a browser-based 3D workspace on Mozilla Hubs using A-Frame and React, enhancing real-time collaborative experiences.",
+                  "technologies": "A-Frame, React, JavaScript"
+                }
+              ]
         },
         "education": {
             "tag": "EDUCATION",

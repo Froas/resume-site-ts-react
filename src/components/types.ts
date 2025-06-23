@@ -18,6 +18,7 @@ export type ContactInfoType = {
     github?: ContactFieldType;
     linkedIn?: ContactFieldType;
     residency?: ContactFieldType;
+    visa?: ContactFieldType;
 }
   
 
@@ -203,4 +204,10 @@ export type ParticlesConfig = {
         };
     };
     retina_detect: boolean;
+};
+
+export type ProjectItem = {
+  title: string;
+  description: string;
+  technologies?: string;
 };

@@ -45,15 +45,15 @@
             "tag": "スキル",
             "frontend": {
                 "category": "フロントエンド:",
-                "technologies": "Typescript, React, HTML, CSS, Tailwind."
+                "technologies": "TypeScript, React, Next.js, A-Frame Tailwind"
             },
             "backend": {
                 "category": "バックエンド:",
-                "technologies": "NodeJS, Python, Java, ExpressJS, FastAPI"
+                "technologies": "Java, Python, Ruby on Rails, Node.js, Express.js, FastAPI, Spring Boot, Django"
             },
             "deployment": {
                 "category": "デプロイ:",
-                "technologies": "Linux Server, Linux, Docker."
+                "technologies": "Linux, Docker, CI/CD, AWS"
             },
             "languages":{
                 "category": "言語:",
@@ -147,10 +147,36 @@
         },
         "certification": {
             "tag": "資格",
-            "certifications": [{
+            "certifications": [
+            {
                 "title": "日本語能力試験",
                 "level": "N2"
-            }]
+            },
+            {
+                "title": "AWS",
+                "level": "AWS Cloud Technical Essentials"
+            },
+            {
+                "title": "IBM",
+                "level": "Back-End Development; Containers w/ Docker, Kubernetes"
+            },
+            {
+                "title": "Meta Back-end",
+                "level": "APIs"
+            },
+            {
+                "title": "Java",
+                "level": "Data Structures, Backend with Java"
+            },
+            {
+                "title": "Machine Learning",
+                "level": "Supervised Machine Learning"
+            },
+            {
+                "title": "Mckinsey",
+                "level": "Forward"
+            }
+        ]
         }
     },
     "footer": {

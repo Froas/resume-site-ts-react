@@ -1,7 +1,7 @@
 import ContextBlock from "./ContentBlock";
 import { useTranslation } from "react-i18next";
 import ContactBlock from "./ContactBlock";
-import { ContactInfoType, SkillsType, EducationType, ExperienceType } from "./types";
+import { ContactInfoType, SkillsType, EducationType, ExperienceType, ProjectItem } from "./types";
 // import { BioContextType } from "./ContactBlock";
 
 const MainContent = () => {
@@ -10,10 +10,7 @@ const MainContent = () => {
 
     const experiences = t("maincontent.experience", { returnObjects: true }) as ExperienceType;
 
-    const projects = t("maincontent.projects.projects", { returnObjects: true }) as Array<{
-        title: string;
-        description: string;
-    }>;
+    const projects = t("maincontent.projects.projects", { returnObjects: true }) as ProjectItem[];
 
     const certifications = t("maincontent.certification.certifications", { returnObjects: true }) as Array<{
         title: string;

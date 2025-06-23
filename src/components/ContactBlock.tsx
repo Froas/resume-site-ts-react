@@ -10,11 +10,12 @@ import {
   import { MailIcon, MapPinIcon, LinkedinIcon } from 'lucide-react';
   import { GitHubLogoIcon } from '@radix-ui/react-icons';
   import { UserIcon } from 'lucide-react';
+  import { BadgeCheckIcon } from 'lucide-react';
 
 
 const ContactBlock = ({ contact }: { contact: ContactInfoType }) => {
 
-    const { tag, name, number, email, github, linkedIn, residency } = contact;
+    const { tag, name, number, email, github, linkedIn, residency, visa } = contact;
     return (
         <div className='flex-1 flex flex-col bg-white/30 dark:bg-gray-800/30 p-3 rounded-lg shadow-lg border border-gray-200 mb-6'>
             <section className="bg-white/30 dark:bg-gray-800/30 rounded-lg p-4 ">
@@ -50,6 +51,12 @@ const ContactBlock = ({ contact }: { contact: ContactInfoType }) => {
                         <MapPinIcon className="w-5 h-5 "/>
                         <p><strong>{residency?.label}: </strong>{residency?.value}</p>
                     </div>
+                    {visa && (
+                      <div className='flex items-center space-x-2'>
+                        <BadgeCheckIcon className="w-5 h-5 "/>
+                        <p><strong>{visa?.label}: </strong> {visa?.value}</p>
+                      </div>
+                    )}
                 </div>
 
             </section>
