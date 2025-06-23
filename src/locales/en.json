@@ -10,47 +10,51 @@
             "tag": "CONTACT INFORMATION",
             "name": {
                 "name": "Name",
-                "value": "Kurosaki Ichigo"
+                "value": "Saldjanov Bakhodir"
             },
             "number": {
                 "number": "Tel",
-                "value": "000-0000-0000"
+                "value": "090-8149-6797"
             },
             "email": {
                 "email": "E-mail",
-                "value": "test@test.com"
+                "value": "saldjanov.bakhodir@gmail.com"
             },
             "github": {
                 "github": "Github",
-                "value": "www.github.com/test"
+                "value": "https://github.com/froas"
             },
             "linkedIn": {
                 "linkedIn": "LinkedIn",
-                "value": "www.linkedIn.com"
+                "value": "www.linkedIn.com/in/bakhodirbek-saldjanov/"
             },
             "residency": {
                 "residency": "Residence",
-                "value": "Japan, Tokyo, Minato"
+                "value": "Japan, Tokyo, Mito"
+            },
+            "visa": {
+                "visa": "Visa status",
+                "value": "Working visa [技術・人文知識・国際義務]"
             }
         },
 
         "summary": {
             "tag": "SUMMARY",
-            "description": "Experienced full-stack developer with a broad skill set ranging from web-based systems to Android applications. With a deep interest in backend development, I focus on API design, server deployment, and optimizing system performance. I am now seeking to specialize in backend development, leveraging my experience to build scalable, efficient systems that meet the needs of modern applications."       
+            "description": "Backend-focused Software Engineer with extensive experience in designing, deploying, and optimizing scalable, high-performance systems on AWS. Proven ability in API development, Docker containerization, and performance tuning for complex applications, including robotics, LLM infrastructure, and cloud services. Fluent in both Japanese and English business environments."  
         },
         "skills": {
             "tag": "SKILLS",
             "frontend": {
                 "category": "Front End:",
-                "technologies": "Typescript, React, HTML, CSS, Tailwind."
+                "technologies": "TypeScript, React, Next.js, A-Frame Tailwind."
             },
             "backend": {
                 "category": "Backend:",
-                "technologies": "NodeJS, Python, Java, ExpressJS, FastAPI"
+                "technologies": "Java, Python, Ruby on Rails, Node.js, Express.js, FastAPI, Spring Boot, Django"
             },
             "deployment": {
                 "category": "Deployment:",
-                "technologies": "Linux Server, Linux, Docker."
+                "technologies": "Linux, Docker, CI/CD, AWS"
             },
             "languages":{
                 "category": "Languages:",
@@ -65,7 +69,7 @@
             "tag": "EXPERIENCE",
             "experiences": [{
                 "position": "Internship as a Sofware Engineer",
-                "workplace": "Google LLC",
+                "workplace": "Unicast LLC",
                 "location": "Ibaraki",
                 "period": "May 2022 - December 2022",
                 "tasks": [{
@@ -80,7 +84,7 @@
             },
             {
                 "position": "Software Engineer",
-                "workplace": "Google LLC",
+                "workplace": "Unicast LLC",
                 "location": "Ibaraki",
                 "period": "January 2023 - Present",
                 "tasks": [{
@@ -148,7 +152,32 @@
             "certifications": [{
                 "title": "Japanese-Language Proficiency Test",
                 "level": "N2"
-            }]
+            }, 
+            {
+                "title": "AWS",
+                "level": "AWS Cloud Technical Essentials"
+            },
+            {
+                "title": "IBM",
+                "level": "Back-End Development; Containers w/ Docker, Kubernetes"
+            },
+            {
+                "title": "Meta Back-end",
+                "level": "APIs"
+            },
+            {
+                "title": "Java",
+                "level": "Data Structures, Backend with Java"
+            },
+            {
+                "title": "Machine Learning",
+                "level": "Supervised Machine Learning"
+            },
+            {
+                "title": "Mckinsey",
+                "level": "Forward"
+            }
+        ]
         }
     },
     "footer": {

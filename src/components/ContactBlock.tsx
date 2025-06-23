@@ -16,8 +16,8 @@ const ContactBlock = ({ contact }: { contact: ContactInfoType }) => {
 
     const { tag, name, number, email, github, linkedIn, residency } = contact;
     return (
-        <div className='flex-1 flex flex-col bg-white dark:bg-gray-800 p-3 rounded-lg shadow-lg border border-gray-200 mb-6'>
-            <section className="bg-white dark:bg-gray-800 rounded-lg p-4 ">
+        <div className='flex-1 flex flex-col bg-white/30 dark:bg-gray-800/30 p-3 rounded-lg shadow-lg border border-gray-200 mb-6'>
+            <section className="bg-white/30 dark:bg-gray-800/30 rounded-lg p-4 ">
                 <h2 className="text-center text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">{tag}</h2>
                 <hr className="my-4 border-gray-300 dark:border-gray-600" />
                 <div className="text-lg text-gray-700 dark:text-gray-300 space-y-2">

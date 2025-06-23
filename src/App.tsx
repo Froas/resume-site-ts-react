@@ -1,23 +1,44 @@
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from "./components/Header";
 import { LanguageProvider } from './contexts/LanguageContext';
 import './utils/i18n';
 import { ThemeProvider } from "./contexts/ThemeContext";
 import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
-function App() {
-  return (
+import LoadingPage from "./components/LoadingPage";
+import ResumePage from "./components/ResumePage";
 
-    <div className="App">
+function App() {
+  const [showResume, setShowResume] = useState(false);
+
+  const handleLoadingComplete = () => {
+    setShowResume(true);
+  };
+
+  return (
+    <Router>
       <LanguageProvider>
-      <ThemeProvider>
-        <Header/>
-        <div className="p-10 bg-customBlueWhite text-red dark:bg-gray-900 dark:text-white">
-         <MainContent/>
-        </div>
-        <Footer />
-      </ThemeProvider>
+        <ThemeProvider>
+          <Routes>
+            <Route 
+              path="/" 
+              element={
+                showResume ? (
+                  <Navigate to="/resume" replace />
+                ) : (
+                  <LoadingPage onComplete={handleLoadingComplete} />
+                )
+              } 
+            />
+            <Route 
+              path="/resume" 
+              element={<ResumePage />} 
+            />
+          </Routes>
+        </ThemeProvider>
       </LanguageProvider>
-    </div>
+    </Router>
   );
 }
 

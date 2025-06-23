@@ -1,4 +1,3 @@
-
 import { Database } from "lucide-react";
 import { ComputerDesktopIcon, CloudIcon, CommandLineIcon, CodeBracketSquareIcon, LanguageIcon, AcademicCapIcon, NewspaperIcon, DocumentCheckIcon, BuildingOffice2Icon, BriefcaseIcon, CogIcon, CubeTransparentIcon, CpuChipIcon, FireIcon } from "@heroicons/react/24/outline";
 import { ResumeContexProps, InfoItemProps, SectionProps } from './types'
@@ -43,8 +42,8 @@ const ContextBlock = (value : ResumeContexProps) => {
       );
 
       return (
-        <div className="flex-1 flex flex-col bg-white dark:bg-gray-800 p-3 rounded-lg shadow-lg border border-gray-200 mb-6">
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg">
+        <div className="flex-1 flex flex-col bg-white/30 dark:bg-gray-800/30 p-3 rounded-lg shadow-lg border border-gray-200 mb-6">
+          <div className="bg-white/30 dark:bg-gray-800/30 p-6 rounded-lg">
             {/* Title */}
             {title && (
               <>
@@ -156,30 +155,50 @@ const ContextBlock = (value : ResumeContexProps) => {
                 ))}
               </Section>
             )}
+            {/* Education */}
+
+              {educationDetails?.bachelor && (
+                <Section icon={AcademicCapIcon}>
+                  <div className="flex items-center space-x-2 text-lg">
+                    <p className="text-left text-lg font-bold text-gray-900 dark:text-white">
+                      {educationDetails.bachelor.degree}
+                    </p>
+                    <p>| {educationDetails.bachelor.place}</p>
+                  </div>
+                </Section>
+              )}
+              {educationDetails?.magister && (
+                <Section icon={AcademicCapIcon}>
+                  <div className="flex items-center space-x-2 text-lg">
+                    <p className="text-left text-lg font-bold text-gray-900 dark:text-white">
+                      {educationDetails.magister.degree}
+                    </p>
+                    <p>| {educationDetails.magister.place}</p>
+                  </div>
+                </Section>
+              )}
+              {
+                educationDetails 
+                ?<div style={{ minHeight: 172 }} />
+                : ""
+              }
+           
             {/* Certifications */}
             {certifications && certifications?.length > 0 && (
-              <Section icon={DocumentCheckIcon}>
-                {certifications.map((item, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center space-x-2 text-lg"
-                  >
-                    <p className="text-left text-lg font-bold text-gray-900 dark:text-white">
-                      {item.title}
-                    </p>
-                    <p>| {item.level}</p>
-                  </div>
-                ))}
-              </Section>
-            )}
-            {/* Education */}
-            {educationDetails?.bachelor && (
-              <Section icon={AcademicCapIcon}>
-                <div className="flex items-center space-x-2 text-lg">
-                  <p className="text-left text-lg font-bold text-gray-900 dark:text-white">
-                    {educationDetails.bachelor.degree}
-                  </p>
-                  <p>| {educationDetails.bachelor.place}</p>
+              <Section>
+                <div className="flex flex-col gap-2 flex-1 h-full">
+                  {certifications.map((item, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center space-x-2 text-lg"
+                    >
+                      <DocumentCheckIcon className="w-5 h-5" />
+                      <p className="text-left text-lg font-bold text-gray-900 dark:text-white">
+                        {item.title}
+                      </p>
+                      <p>| {item.level}</p>
+                    </div>
+                  ))}
                 </div>
               </Section>
             )}

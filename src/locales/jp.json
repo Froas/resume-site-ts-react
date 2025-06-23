@@ -10,27 +10,31 @@
             "tag": "連絡先情報",
             "name": {
                 "name": "氏名",
-                "value": "黒崎一護"
+                "value": "Saldjanov Bakhodir"
             },
             "number": {
                 "number": "Tel",
-                "value": "0000-00000-00000"
+                "value": "090-8149-6797"
             },
             "email": {
                 "email": "E-mail",
-                "value": "test@test.com"
+                "value": "saldjanov.bakhodir@gmail.com"
             },
             "github": {
                 "github": "Github",
-                "value": "www.github.com/test"
+                "value": "https://github.com/froas"
             },
             "linkedIn": {
                 "linkedIn": "LinkedIn",
-                "value": "www.linkedIn.com"
+                "value": "www.linkedIn.com/in/bakhodirbek-saldjanov/"
             },
             "residency": {
-                "residency": "住所",
-                "value": "日本茨城県水戸市"
+                "residency": "Residence",
+                "value": "Japan, Tokyo, Mito"
+            },
+            "visa": {
+                "visa": "Visa status",
+                "value": "Working visa [技術・人文知識・国際義務]"
             }
         },
         "summary": {
@@ -64,7 +68,7 @@
             "tag": "職歴 ",
             "experiences": [{
                 "position": "ソフトウェアエンジニア インターンシップ",
-                "workplace": "Google LLC",
+                "workplace": "株式会社ユニキャスト",
                 "location": "茨城県",
                 "period": "令和５年５月ー令和５年１２月",
                 "tasks": [{
@@ -79,7 +83,7 @@
             },
             {
                 "position": "ソフトウェアエンジニア",
-                "workplace": "Google LLC",
+                "workplace": "ユニキャスト",
                 "location": "茨城県",
                 "period": "令和６年１月ー現在",
                 "tasks": [{
