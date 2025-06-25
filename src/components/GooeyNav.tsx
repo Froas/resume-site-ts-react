@@ -314,7 +314,7 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
           .dark .gooey-nav li.active::after, .dark .gooey-nav .effect.filter::after { background: #fff; }
         `}
       </style>
-      <div className="relative gooey-nav" ref={containerRef}>
+      <div className="relative inline-block gooey-nav" ref={containerRef}>
         <nav
           className="flex relative"
           style={{ transform: "translate3d(0,0,0.01px)" }}
@@ -345,7 +345,7 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
             ))}
           </ul>
         </nav>
-        <span className="effect filter" ref={filterRef} />
+        {/* <span className="effect filter" ref={filterRef} /> */}
         <span className="effect text" ref={textRef} />
       </div>
     </>

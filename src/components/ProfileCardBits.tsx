@@ -22,6 +22,8 @@ interface ProfileCardProps {
   contactText?: string;
   showUserInfo?: boolean;
   onContactClick?: () => void;
+  onCardClick?: () => void;
+  email?: string;
 }
 
 const DEFAULT_BEHIND_GRADIENT =
@@ -72,6 +74,8 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
   contactText = "Contact",
   showUserInfo = true,
   onContactClick,
+  onCardClick,
+  email = "bakhodir.saldjanov@gmail.com",
 }) => {
   const wrapRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -258,9 +262,14 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
     [iconUrl, grainUrl, showBehindGradient, behindGradient, innerGradient]
   );
 
-  const handleContactClick = useCallback(() => {
-    onContactClick?.();
-  }, [onContactClick]);
+  const handleContactClick = useCallback((e: React.MouseEvent) => {
+    e.stopPropagation(); // Prevent card click when clicking contact button
+    window.open(`mailto:${email}`, '_blank');
+  }, [email]);
+
+  const handleCardClick = useCallback(() => {
+    onCardClick?.();
+  }, [onCardClick]);
 
   return (
     <div
@@ -268,7 +277,12 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
       className={`pc-card-wrapper ${className}`.trim()}
       style={cardStyle}
     >
-      <section ref={cardRef} className="pc-card">
+      <section 
+        ref={cardRef} 
+        className="pc-card"
+        onClick={handleCardClick}
+        style={{ cursor: onCardClick ? 'pointer' : 'default' }}
+      >
         <div className="pc-inside">
           <div className="pc-shine" />
           <div className="pc-glare" />

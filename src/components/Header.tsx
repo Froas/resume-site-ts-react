@@ -56,7 +56,7 @@ const Header = () => {
     }, [language, isChecked, theme]);
 
     return (
-      <header className={`p-4 flex justify-between items-center gap-4 ${theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
+      <header className={`p-4 flex justify-between items-center gap-4 ${theme === 'dark' ? 'bg-gray-800/60 text-white' : 'bg-white/60 text-black'}`}>
         <div />
         <div className="flex justify-end w-full items-center gap-2">
           <GooeyNav
@@ -72,18 +72,30 @@ const Header = () => {
             ]}
             initialActiveIndex={0}
           />
-          <button
-            style={{ display: 'none' }}
+          {false
+          ?  <button
             onClick={() => {
               const element = document.getElementById('resume-content');
               if (element) {
-                html2pdf().from(element).save('resume.pdf');
+                html2pdf()
+                  .set({
+                    margin:       0.5,
+                    filename:     'resume.pdf',
+                    image:        { type: 'jpeg', quality: 0.98 },
+                    html2canvas:  { scale: 2, useCORS: true },
+                    jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+                  })
+                  .from(element)
+                  .save();
               }
             }}
             className="ml-4 px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 transition-colors text-sm shadow"
           >
             Download Resume
           </button>
+          : ""
+          }
+         
         </div>
       </header>
     );

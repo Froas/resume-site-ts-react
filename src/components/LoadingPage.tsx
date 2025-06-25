@@ -7,8 +7,7 @@ import ProfileCard from './ProfileCardBits';
 import './ProfileCardBits.css';
 import { useNavigate } from 'react-router-dom';
 import avatarImg from '../assets/avatar/3.png';
-import FallingText from './FallingText';
-import './FallingText.css';
+import ParticlesBackground from "./ParticlesBackground";
 
 interface CubeProps {
   delay: number;
@@ -93,60 +92,73 @@ const LoadingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
 
   return (
     <div className={`min-h-screen w-full ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-customBlueWhite text-gray-900'}`}> 
-      <div className={`w-full h-full min-h-screen flex flex-col items-center justify-center transition-all duration-500 ${showCard ? 'pt-24 pb-24' : ''}`}> 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className={`text-2xl md:text-4xl font-bold text-center flex items-center justify-center w-full`}
-          style={{ minHeight: 60, height: showCard ? 'auto' : '40vh', alignItems: 'center', justifyContent: 'center', display: 'flex', position: 'relative' }}
-        >
-          {!showCard ? (
-            <>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-customBlue to-customPurple">
-                {currentText}
-              </span>
-              {isDecrypting && (
-                <motion.span 
-                  animate={{ opacity: [1, 0, 1] }}
-                  transition={{ duration: 0.5, repeat: Infinity }}
-                  className="ml-1"
-                >
-                  |
-                </motion.span>
-              )}
-            </>
-          ) : (
-            <div style={{ width: '100%', minHeight: 220, position: 'relative' }}>
-              <FallingText
-                text={welcomeText}
-                fontSize="2rem"
-                gravity={1.3}
-                backgroundColor="transparent"
-              />
-            </div>
-          )}
-        </motion.div>
+      <div className={`w-full h-full min-h-screen flex flex-col items-center justify-center transition-all duration-500 ${showCard ? 'pt-12 pb-12' : ''}`}> 
+        {!showCard && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-2xl md:text-4xl font-bold text-center flex items-center justify-center w-full"
+            style={{ 
+              minHeight: 60, 
+              height: '40vh', 
+              alignItems: 'center', 
+              justifyContent: 'center', 
+              display: 'flex'
+            }}
+          >
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-customBlue to-customPurple">
+              {currentText}
+            </span>
+            {isDecrypting && (
+              <motion.span 
+                animate={{ opacity: [1, 0, 1] }}
+                transition={{ duration: 0.5, repeat: Infinity }}
+                className="ml-1"
+              >
+                |
+              </motion.span>
+            )}
+          </motion.div>
+        )}
+        
         <AnimatePresence>
+          {/* <ParticlesBackground /> */}
           {showCard && (
-            <motion.div
-              initial={{ opacity: 0, y: 60 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 60 }}
-              transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="w-full flex justify-center"
-            >
-              <ProfileCard
-                name="Saldjanov Bakhodir"
-                title="Backend Engineer"
-                handle="froas"
-                contactText="Contact Me"
-                avatarUrl={avatarImg}
-                showUserInfo={true}
-                enableTilt={true}
-                onContactClick={() => navigate('/resume')}
-              />
-            </motion.div>
+            <>
+              <motion.div
+                initial={{ opacity: 0, y: 60 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 60 }}
+                transition={{ duration: 0.7, ease: 'easeOut' }}
+                className="w-full flex justify-center mb-8"
+              >
+                <ProfileCard
+                  name="Saldjanov Bakhodir"
+                  title="Backend Engineer"
+                  handle="froas"
+                  contactText="Contact Me"
+                  avatarUrl={avatarImg}
+                  showUserInfo={true}
+                  enableTilt={true}
+                  onCardClick={() => navigate('/resume')}
+                  email="bakhodir.saldjanov@gmail.com"
+                />
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -50 }}
+                transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
+                className="text-xl md:text-2xl font-bold text-center"
+                style={{ pointerEvents: 'none' }}
+              >
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-customBlue to-customPurple">
+                  {welcomeText}
+                </span>
+              </motion.div>
+            </>
           )}
         </AnimatePresence>
       </div>
@@ -154,4 +166,4 @@ const LoadingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
   );
 };
 
-export default LoadingPage; 
+export default LoadingPage;

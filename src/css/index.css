@@ -94,3 +94,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Print-friendly styles for PDF export */
+@media print {
+  #resume-content {
+    background: #fff !important;
+    color: #000 !important;
+    filter: none !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+  #resume-content * {
+    background: transparent !important;
+    color: #000 !important;
+    filter: none !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+}

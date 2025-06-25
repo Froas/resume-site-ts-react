@@ -34,9 +34,19 @@
 
 .pc-card-wrapper {
   perspective: 500px;
-  transform: translate3d(0, 0, 0.1px);
+  transform: translate3d(0, 100%, 0.1px);
   position: relative;
   touch-action: none;
+  animation: slide-in 0.6s ease-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translate3d(0, 100%, 0.1px);
+  }
+  to {
+    transform: translate3d(0, 0, 0.1px);
+  }
 }
 
 .pc-card-wrapper::before {
