@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from '../contexts/ThemeContext';
-import { useTranslation } from 'react-i18next';
-import ScrollFloat from './ScrollFloat';
 import ProfileCard from './ProfileCardBits';
 import './ProfileCardBits.css';
 import { useNavigate } from 'react-router-dom';
 import avatarImg from '../assets/avatar/3.png';
-import ParticlesBackground from "./ParticlesBackground";
 import Particles from "./NewParticles";
 
 interface CubeProps {
@@ -16,39 +13,38 @@ interface CubeProps {
   index: number;
 }
 
-const Cube: React.FC<CubeProps> = ({ delay, theme, index }) => {
-  const colors = theme === 'dark' 
-    ? ['#3B82F6', '#8B5CF6', '#06B6D4', '#10B981', '#F59E0B', '#EF4444']
-    : ['#5067EB', '#291D89', '#3B82F6', '#8B5CF6', '#06B6D4', '#10B981'];
+// const Cube: React.FC<CubeProps> = ({ delay, theme, index }) => {
+//   const colors = theme === 'dark' 
+//     ? ['#3B82F6', '#8B5CF6', '#06B6D4', '#10B981', '#F59E0B', '#EF4444']
+//     : ['#5067EB', '#291D89', '#3B82F6', '#8B5CF6', '#06B6D4', '#10B981'];
 
-  return (
-    <motion.div
-      className={`w-4 h-4 rounded-sm`}
-      style={{ backgroundColor: colors[index % colors.length] }}
-      animate={{
-        rotateX: [0, 360],
-        rotateY: [0, 360],
-        scale: [1, 1.3, 1],
-        y: [0, -20, 0],
-      }}
-      transition={{
-        duration: 4,
-        repeat: Infinity,
-        delay,
-        ease: "easeInOut"
-      }}
-      whileHover={{
-        scale: 1.5,
-        rotateZ: 180,
-        transition: { duration: 0.3 }
-      }}
-    />
-  );
-};
+//   return (
+//     <motion.div
+//       className={`w-4 h-4 rounded-sm`}
+//       style={{ backgroundColor: colors[index % colors.length] }}
+//       animate={{
+//         rotateX: [0, 360],
+//         rotateY: [0, 360],
+//         scale: [1, 1.3, 1],
+//         y: [0, -20, 0],
+//       }}
+//       transition={{
+//         duration: 4,
+//         repeat: Infinity,
+//         delay,
+//         ease: "easeInOut"
+//       }}
+//       whileHover={{
+//         scale: 1.5,
+//         rotateZ: 180,
+//         transition: { duration: 0.3 }
+//       }}
+//     />
+//   );
+// };
 
 const LoadingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
   const { theme } = useTheme();
-  const { t } = useTranslation();
   const [currentText, setCurrentText] = useState('');
   const [isDecrypting, setIsDecrypting] = useState(false);
   const [showCard, setShowCard] = useState(false);

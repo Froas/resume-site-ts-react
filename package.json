@@ -19,6 +19,7 @@
     "@types/react-dom": "^18.3.0",
     "@types/react-i18next": "^8.1.0",
     "autoprefixer": "^10.4.20",
+    "caniuse-lite": "^1.0.30001726",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.18.1",

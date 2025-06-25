@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Header from "./components/Header";
 import { LanguageProvider } from './contexts/LanguageContext';
 import './utils/i18n';
 import { ThemeProvider } from "./contexts/ThemeContext";
-import MainContent from "./components/MainContent";
-import Footer from "./components/Footer";
 import LoadingPage from "./components/LoadingPage";
 import ResumePage from "./components/ResumePage";
 

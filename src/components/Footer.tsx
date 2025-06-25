@@ -1,10 +1,6 @@
-import { useTheme } from "../contexts/ThemeContext";
-import { useTranslation } from "react-i18next";
 import { SiTailwindcss, SiTypescript, SiReact } from "react-icons/si";
 
 const Footer = () => {
-    const { t } = useTranslation();
-    const { theme, toggleTheme } = useTheme();
     return (
         <footer className="py-4">
             <div className="container mx-auto text-center flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4">

@@ -1,10 +1,7 @@
 import { useTranslation  } from "react-i18next";
 import { useLanguage } from "../contexts/LanguageContext";
 import { useTheme } from "../contexts/ThemeContext";
-import { Button } from "./ui/Button"
-import { Switch } from "./ui/Switch";
 import { useState, useEffect } from "react"
-import { useNavigate, useLocation } from "react-router-dom";
 import GooeyNav from './GooeyNav';
 // @ts-ignore: no types for html2pdf.js
 import html2pdf from 'html2pdf.js';
@@ -14,8 +11,6 @@ const Header = () => {
     const { language, toggleLanguage } = useLanguage();
     const { theme, toggleTheme } = useTheme();
     const [ isChecked, setIsChecked ] = useState(false);
-    const navigate = useNavigate();
-    const location = useLocation();
 
     const toggleSwitchAndButton = () => {
         console.log('Switch toggled');
@@ -30,11 +25,6 @@ const Header = () => {
           document.body.classList.remove('dark');
         }
       }, [theme]);
-
-    const handleBackToLoading = () => {
-        navigate('/');
-        window.location.reload(); // Reload page to reset state
-    };
 
     useEffect(() => {
         const nav = document.querySelector('.GooeyNav') || document.querySelector('nav');

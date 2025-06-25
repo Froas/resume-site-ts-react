@@ -1,5 +1,4 @@
-import { Database } from "lucide-react";
-import { ComputerDesktopIcon, CloudIcon, CommandLineIcon, ServerStackIcon, LanguageIcon, AcademicCapIcon, NewspaperIcon, DocumentCheckIcon, BuildingOffice2Icon, BriefcaseIcon, CogIcon, CubeTransparentIcon, CpuChipIcon, FireIcon } from "@heroicons/react/24/outline";
+import { ComputerDesktopIcon, CloudIcon, CommandLineIcon, ServerStackIcon, LanguageIcon, AcademicCapIcon, DocumentCheckIcon, BuildingOffice2Icon, FireIcon } from "@heroicons/react/24/outline";
 import { ResumeContexProps, InfoItemProps, SectionProps, ProjectItem } from './types'
 
 const ContextBlock = (value : ResumeContexProps) => {
