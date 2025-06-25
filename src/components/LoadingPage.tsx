@@ -8,6 +8,7 @@ import './ProfileCardBits.css';
 import { useNavigate } from 'react-router-dom';
 import avatarImg from '../assets/avatar/3.png';
 import ParticlesBackground from "./ParticlesBackground";
+import Particles from "./NewParticles";
 
 interface CubeProps {
   delay: number;
@@ -91,7 +92,10 @@ const LoadingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
   }, []);
 
   return (
-    <div className={`min-h-screen w-full ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-customBlueWhite text-gray-900'}`}> 
+    <div className={`min-h-screen w-full ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+      <div className="fixed inset-0 -z-10">
+        <Particles />
+      </div>
       <div className={`w-full h-full min-h-screen flex flex-col items-center justify-center transition-all duration-500 ${showCard ? 'pt-12 pb-12' : ''}`}> 
         {!showCard && (
           <motion.div
@@ -123,7 +127,6 @@ const LoadingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
         )}
         
         <AnimatePresence>
-          {/* <ParticlesBackground /> */}
           {showCard && (
             <>
               <motion.div

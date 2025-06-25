@@ -64,12 +64,20 @@ const ContextBlock = (value : ResumeContexProps) => {
               <Section>
                 {workExperience.experiences.map((work, index) => (
                   <div key={index} className="mb-4">
-                    <div className="flex flex-col sm:flex-row items-start sm:items-center text-left text-xl font-bold text-gray-900 dark:text-white space-y-2 sm:space-y-0 sm:space-x-2">
-                        <BuildingOffice2Icon className="w-5 h-5" />
-                        <p>{work.position}</p>
-                        <p>| {work.workplace}</p>
-                        <p>| {work.location}</p>
-                        <p>| {work.period}</p>
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-2">
+                      <div className="flex items-center gap-1">
+                        <BuildingOffice2Icon className="w-5 h-5 mr-1" />
+                        <span className="font-bold text-base sm:text-lg">{work.position}</span>
+                      </div>
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-2 text-gray-500 text-base sm:text-sm font-normal">
+                        {/* | Unicast LLC | Ibaraki | May 2022 - December 2022 */}
+                        <span className="hidden sm:inline">|</span>
+                        <span>{work.workplace}</span>
+                        <span className="hidden sm:inline">|</span>
+                        <span>{work.location}</span>
+                        <span className="hidden sm:inline">|</span>
+                        <span>{work.period}</span>
+                      </div>
                     </div>
                     {work.tasks?.length > 0 && (
                       <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 text-lg">
