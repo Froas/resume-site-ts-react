@@ -90,7 +90,7 @@ const fragment = /* glsl */ `
 `;
 
 const Particles: React.FC<ParticlesProps> = ({
-  particleCount = 200,
+  particleCount = 1000,
   particleSpread = 10,
   speed = 0.1,
   particleColors,
