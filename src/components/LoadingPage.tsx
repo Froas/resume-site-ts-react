@@ -6,6 +6,7 @@ import './ProfileCardBits.css';
 import { useNavigate } from 'react-router-dom';
 import avatarImg from '../assets/avatar/3.png';
 import Particles from "./NewParticles";
+import PortfolioSection from './PortfolioSection';
 
 interface CubeProps {
   delay: number;
@@ -48,6 +49,7 @@ const LoadingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
   const [currentText, setCurrentText] = useState('');
   const [isDecrypting, setIsDecrypting] = useState(false);
   const [showCard, setShowCard] = useState(false);
+  const [randomQuote, setRandomQuote] = useState({"":""})
   const navigate = useNavigate();
 
   const welcomeText = "Hello! This is my resume website";
@@ -69,8 +71,31 @@ const LoadingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
       .join('');
   };
 
+  // const getQuote = async () => {
+  //   fetch('https://programming-quotesapi.vercel.app/api/random')
+  //   .then(response => response.json())
+  //   .then(quote => console.log(quote))
+  // }
+
+  const handleProjectClick = (projectId: string) => {
+  switch(projectId) {
+    case 'sugarless-api':
+      window.open('https://github.com/Froas/sugarless-fastapi', '_blank');
+      break;
+    case 'qr-generator':
+      window.open('https://froas.github.io/qr-gen-react/', '_blank');
+      break;
+    case 'roadmap-tracker':
+      window.open('https://github.com/Froas/fastapi-task-tracker', '_blank');
+      break;
+    default:
+      console.log('Project not found');
+  }
+};
+
   useEffect(() => {
     setIsDecrypting(true);
+    // getQuote()
     let iteration = 0;
     const maxIterations = 15;
     const decryptInterval = setInterval(() => {
@@ -144,7 +169,11 @@ const LoadingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
                   email="bakhodir.saldjanov@gmail.com"
                 />
               </motion.div>
-              
+
+              <PortfolioSection 
+                theme={theme} 
+                onProjectClick={handleProjectClick} 
+              />
               <motion.div
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}

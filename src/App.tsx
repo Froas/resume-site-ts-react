@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { LanguageProvider } from './contexts/LanguageContext';
 import './utils/i18n';
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -14,7 +14,7 @@ function App() {
   };
 
   return (
-    <Router basename="/resume-site-ts-react">
+    <Router>
       <LanguageProvider>
         <ThemeProvider>
           <Routes>
