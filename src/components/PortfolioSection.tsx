@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Code, QrCode, Target } from 'lucide-react';
+import { ExternalLink, Code, QrCode, Target, MessageSquareDot, Leaf } from 'lucide-react';
 
 const PortfolioSection = ({ theme, onProjectClick }: { theme: string; onProjectClick: (id: string) => void }) => {
   const projects = [
@@ -8,22 +8,29 @@ const PortfolioSection = ({ theme, onProjectClick }: { theme: string; onProjectC
       id: 'sugarless-api',
       name: 'Sugarless OpenAPI',
       description: 'Clean API documentation generator',
-      icon: <Code className="w-5 h-5" />,
-      color: 'from-blue-500 to-cyan-500'
+      icon: <Leaf className="w-5 h-5" />,
+      color: 'from-green-600 to-teal-600'
     },
     {
       id: 'qr-generator',
       name: 'QR Code Generator',
       description: 'Generate custom QR codes instantly',
       icon: <QrCode className="w-5 h-5" />,
-      color: 'from-purple-500 to-pink-500'
+      color: 'from-red-600 to-blue-600'
     },
+    // {
+    //   id: 'roadmap-tracker',
+    //   name: 'Roadmap Goal Tracker',
+    //   description: 'Track your learning journey',
+    //   icon: <Target className="w-5 h-5" />,
+    //   color: 'from-blue-600 to-emerald-500'
+    // },
     {
-      id: 'roadmap-tracker',
-      name: 'Roadmap-Goal Tracker',
-      description: 'Track your learning journey',
-      icon: <Target className="w-5 h-5" />,
-      color: 'from-green-500 to-emerald-500'
+      id: 'solve-chain-why',
+      name: '5 Whys AI Analyzer',
+      description: 'AI-powered guidance ensures you ask better questions.',
+      icon: <MessageSquareDot className="w-5 h-5" />,
+      color: 'from-black to-gray-800'
     }
   ];
 

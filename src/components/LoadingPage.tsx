@@ -80,13 +80,16 @@ const LoadingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
   const handleProjectClick = (projectId: string) => {
   switch(projectId) {
     case 'sugarless-api':
-      window.open('https://github.com/Froas/sugarless-fastapi', '_blank');
+      window.open('https://froas.github.io/react-openapi-sugarfree/#/home', '_blank');
       break;
     case 'qr-generator':
       window.open('https://froas.github.io/qr-gen-react/', '_blank');
       break;
-    case 'roadmap-tracker':
-      window.open('https://github.com/Froas/fastapi-task-tracker', '_blank');
+    // case 'roadmap-tracker':
+    //   window.open('https://github.com/Froas/fastapi-task-tracker', '_blank');
+    //   break;
+    case 'solve-chain-why':
+      window.open('https://froas.github.io/solve-chain-why', '_blank');
       break;
     default:
       console.log('Project not found');
