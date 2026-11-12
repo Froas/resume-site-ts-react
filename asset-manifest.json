@@ -1,18 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.0111beee.css",
-    "main.js": "/static/js/main.3f719a4a.js",
-    "static/js/977.3c76c196.chunk.js": "/static/js/977.3c76c196.chunk.js",
-    "static/js/455.4a28b638.chunk.js": "/static/js/455.4a28b638.chunk.js",
-    "static/media/3.png": "/static/media/3.e2e2e83169c7dfd27e2e.png",
+    "main.css": "/static/css/main.d2d13abc.css",
+    "main.js": "/static/js/main.1416e999.js",
+    "static/css/890.c760894f.chunk.css": "/static/css/890.c760894f.chunk.css",
+    "static/js/890.3d8f3843.chunk.js": "/static/js/890.3d8f3843.chunk.js",
     "index.html": "/index.html",
-    "main.0111beee.css.map": "/static/css/main.0111beee.css.map",
-    "main.3f719a4a.js.map": "/static/js/main.3f719a4a.js.map",
-    "977.3c76c196.chunk.js.map": "/static/js/977.3c76c196.chunk.js.map",
-    "455.4a28b638.chunk.js.map": "/static/js/455.4a28b638.chunk.js.map"
+    "static/media/tasknest.svg": "/static/media/tasknest.3a580ea75d0684c0b07c9e8a684117aa.svg",
+    "static/media/mercari-monitor.svg": "/static/media/mercari-monitor.39423371723f2622ac05c14d71d0c5fe.svg"
   },
   "entrypoints": [
-    "static/css/main.0111beee.css",
-    "static/js/main.3f719a4a.js"
+    "static/css/main.d2d13abc.css",
+    "static/js/main.1416e999.js"
   ]
 }

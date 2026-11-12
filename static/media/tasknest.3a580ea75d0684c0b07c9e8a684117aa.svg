@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <title>TaskNest mountain logo</title>
+  <rect width="512" height="512" rx="96" fill="#f3f1e9"/>
+  <path
+    d="M70 414L164 268L204 240L259 154L316 238L357 291L437 414H70Z"
+    fill="#496f61"
+  />
+  <path
+    d="M169 416C211 374 264 334 287 290C307 251 289 223 255 190L230 166"
+    stroke="#f3f1e9"
+    stroke-width="26"
+    stroke-linecap="square"
+  />
+  <path d="M260 87L296 138L260 181L224 138L260 87Z" fill="#b58564"/>
+</svg>
