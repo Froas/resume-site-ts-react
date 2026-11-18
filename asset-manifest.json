@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.d2d13abc.css",
-    "main.js": "/static/js/main.1416e999.js",
+    "main.css": "/static/css/main.15b96666.css",
+    "main.js": "/static/js/main.8a6d4e1f.js",
     "static/css/890.c760894f.chunk.css": "/static/css/890.c760894f.chunk.css",
     "static/js/890.3d8f3843.chunk.js": "/static/js/890.3d8f3843.chunk.js",
+    "static/media/mercari-monitor-products.webp": "/static/media/mercari-monitor-products.5582feeffdcfaae3c7a2.webp",
+    "static/media/mercari-monitor-details.webp": "/static/media/mercari-monitor-details.5f5e48e11ac89de30b4b.webp",
     "index.html": "/index.html",
     "static/media/tasknest.svg": "/static/media/tasknest.3a580ea75d0684c0b07c9e8a684117aa.svg",
     "static/media/mercari-monitor.svg": "/static/media/mercari-monitor.39423371723f2622ac05c14d71d0c5fe.svg"
   },
   "entrypoints": [
-    "static/css/main.d2d13abc.css",
-    "static/js/main.1416e999.js"
+    "static/css/main.15b96666.css",
+    "static/js/main.8a6d4e1f.js"
   ]
 }
