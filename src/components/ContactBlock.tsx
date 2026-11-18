@@ -6,7 +6,6 @@ import {
     AvatarImage,
   } from "./ui/Avatar"
 
-  import { PhoneIcon } from '@heroicons/react/24/outline'
   import { MailIcon, MapPinIcon, LinkedinIcon } from 'lucide-react';
   import { GitHubLogoIcon } from '@radix-ui/react-icons';
   import { UserIcon } from 'lucide-react';
@@ -15,7 +14,7 @@ import {
 
 const ContactBlock = ({ contact }: { contact: ContactInfoType }) => {
 
-    const { tag, name, number, email, github, linkedIn, residency, visa } = contact;
+    const { tag, name, email, github, linkedIn, residency, visa } = contact;
     return (
         <div className='flex-1 flex flex-col bg-white/30 dark:bg-gray-800/30 p-3 rounded-lg shadow-lg border border-gray-200 mb-6'>
             <section className="bg-white/30 dark:bg-gray-800/30 rounded-lg p-4 ">
@@ -30,10 +29,6 @@ const ContactBlock = ({ contact }: { contact: ContactInfoType }) => {
                             <AvatarFallback>CN</AvatarFallback>
                         </Avatar>
                         
-                    </div>
-                    <div className='flex items-center space-x-2'>
-                        <PhoneIcon className="w-5 h-5 "/>
-                        <p><strong>{number?.label}: </strong>{number?.value}</p>
                     </div>
                     <div className='flex items-center space-x-2'>
                         <MailIcon className="w-5 h-5 mt-1"/>

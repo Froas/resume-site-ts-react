@@ -13,7 +13,6 @@ export type ResidencyInfoType = {
 export type ContactInfoType = {
     tag?: string;
     name?: ContactFieldType;
-    number?: ContactFieldType;
     email?: ContactFieldType;
     github?: ContactFieldType;
     linkedIn?: ContactFieldType;
