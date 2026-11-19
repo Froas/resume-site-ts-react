@@ -1,9 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.34cffe42.css",
-    "main.js": "/static/js/main.9d9e4459.js",
-    "static/css/994.c760894f.chunk.css": "/static/css/994.c760894f.chunk.css",
-    "static/js/994.0fb0ff49.chunk.js": "/static/js/994.0fb0ff49.chunk.js",
+    "main.css": "/static/css/main.d802f8ce.css",
+    "main.js": "/static/js/main.9acdd75d.js",
+    "static/css/994.cb323b51.chunk.css": "/static/css/994.cb323b51.chunk.css",
+    "static/js/994.90f4a648.chunk.js": "/static/js/994.90f4a648.chunk.js",
+    "static/media/lingoleaf-library.png": "/static/media/lingoleaf-library.225dea8cec58411bba10.png",
+    "static/media/roverdots-preview.jpg": "/static/media/roverdots-preview.b3a35abc27c44969e24d.jpg",
+    "static/media/tasknest-preview.jpg": "/static/media/tasknest-preview.531b7636be3b79c9706e.jpg",
     "static/media/mercari-monitor-products.webp": "/static/media/mercari-monitor-products.5582feeffdcfaae3c7a2.webp",
     "static/media/mercari-monitor-details.webp": "/static/media/mercari-monitor-details.5f5e48e11ac89de30b4b.webp",
     "index.html": "/index.html",
@@ -11,7 +14,7 @@
     "static/media/mercari-monitor.svg": "/static/media/mercari-monitor.39423371723f2622ac05c14d71d0c5fe.svg"
   },
   "entrypoints": [
-    "static/css/main.34cffe42.css",
-    "static/js/main.9d9e4459.js"
+    "static/css/main.d802f8ce.css",
+    "static/js/main.9acdd75d.js"
   ]
 }
