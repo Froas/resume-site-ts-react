@@ -3,21 +3,12 @@ export type ContactFieldType = {
     value: string;
 };
   
-export type ResidencyInfoType = {
-    residency: string;
-    country: string;
-    prefecture: string;
-    city: string;
-};
-  
 export type ContactInfoType = {
     tag?: string;
     name?: ContactFieldType;
     email?: ContactFieldType;
     github?: ContactFieldType;
     linkedIn?: ContactFieldType;
-    residency?: ContactFieldType;
-    visa?: ContactFieldType;
 }
   
 
