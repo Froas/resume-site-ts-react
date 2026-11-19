@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.d802f8ce.css",
+    "main.css": "/static/css/main.b9e4c96d.css",
     "main.js": "/static/js/main.9acdd75d.js",
     "static/css/994.cb323b51.chunk.css": "/static/css/994.cb323b51.chunk.css",
     "static/js/994.90f4a648.chunk.js": "/static/js/994.90f4a648.chunk.js",
@@ -14,7 +14,7 @@
     "static/media/mercari-monitor.svg": "/static/media/mercari-monitor.39423371723f2622ac05c14d71d0c5fe.svg"
   },
   "entrypoints": [
-    "static/css/main.d802f8ce.css",
+    "static/css/main.b9e4c96d.css",
     "static/js/main.9acdd75d.js"
   ]
 }
